@@ -14,7 +14,18 @@ public class QueryProcessor {
         } else if (query.contains("name")) {
            return "Tanbier";
         } else { // TODO extend the programm here
-            return "";
+            String[] string = query.split("%20");
+            int summand1 = 0;
+            int summand2 = 0;
+            if (string[1].equals("what")) {
+                String sum1 = string[3];
+                summand1 = Integer.parseInt(sum1);
+                String sum2 = string[5];
+                summand2 = Integer.parseInt(sum2);
+            }
+            int sum = summand1 + summand2;
+            return String.valueOf(sum);
+        }
         }
     }
-}
+
