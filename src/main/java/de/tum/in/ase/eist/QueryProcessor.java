@@ -27,5 +27,9 @@ public class QueryProcessor {
             return String.valueOf(sum);
         }
         }
+
+    public static void main(String[] args) {
+
+    }
     }
 
